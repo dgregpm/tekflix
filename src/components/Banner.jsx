@@ -1,7 +1,7 @@
 import axios from './../axios';
 import React, { useState,useEffect } from 'react';
 import './Banner.css';
-import requests from './../Requests';
+import requests from '../lib/Requests';
 
 function Banner() {
 
@@ -29,14 +29,14 @@ function Banner() {
     
 
   return (
-    <header className="banner" style={{
+    <header className="banner fadeIn" style={{
         backgroundSize: 'cover' , 
         backgroundPosition: 'center center', 
         backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path || movie?.poster_path}")`,
         }}
     >
     
-    <div className="banner__contents">
+    <div className="banner__contents ">
         <h1 className="banner__title">{
             movie?.name || movie?.name || movie?.original_name
         }</h1>
