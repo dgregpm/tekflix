@@ -7,7 +7,7 @@
 
 .fadeIn {
     
-    animation: fadeInAnimation 1s;
+    /* animation: fadeInAnimation 1s; */
         
 }
 @keyframes fadeInAnimation {

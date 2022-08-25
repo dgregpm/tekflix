@@ -19,7 +19,7 @@ function Row({title, fetchUrl, isLargeRow = false}) {
   }, [fetchUrl]);
 
   return (
-    <div className="row">
+    <div className="row fadeInRow">
       <h2>{title}</h2>
 
       <div className="row__posters">

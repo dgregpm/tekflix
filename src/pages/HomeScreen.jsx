@@ -1,17 +1,20 @@
 import React from 'react';
 import requests from '../lib/Requests';
-import Banner from '../components/Banner';
+// import Banner from '../components/Banner';
 import './HomeScreen.css';
 import Nav from '../components/Nav';
 const Row = React.lazy(() => import('../components/Row'));
+const Banner = React.lazy(() => import('../components/Banner'));
 
 
 function HomeScreen() {
   return (
     <div className="homeScreen">
           <Nav />
-          
-          <Banner />  
+          <React.Suspense fallback={<div>Loading...</div>} >
+            <Banner />
+          </React.Suspense>
+
           <React.Suspense fallback={<div>Loading...</div>} >
             <Row 
               title='NETFLIX ORIGINALS'
