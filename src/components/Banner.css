@@ -8,13 +8,17 @@
 .fadeIn {
     
     /* animation: fadeInAnimation 1s; */
+    animation-name: fadeInAnimation;
+    animation-fill-mode: backwards;
+    animation-duration: 500ms;
+    animation-delay: 300ms;
         
 }
 @keyframes fadeInAnimation {
-    0% {
+    from {
         opacity: 0;
     }
-    100% {
+    to {
         opacity: 1;
     }
 }

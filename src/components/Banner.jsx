@@ -36,7 +36,7 @@ function Banner() {
         }}
     >
     
-    <div className="banner__contents ">
+    <div className="banner__contents fadeIn">
         <h1 className="banner__title">{
             movie?.name || movie?.name || movie?.original_name
         }</h1>

@@ -32,7 +32,9 @@ function App() {
     <div className="App">
       
         {!user ? (
-          <Login />
+          <Routes>
+            <Route exact path='/login' element={<Login />} />
+          </Routes>          
         ) : (
           <Routes>
             <Route exact path='/profile' element={<Profile />} />
