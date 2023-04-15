@@ -22,6 +22,7 @@ function Row({title, fetchUrl, isLargeRow = false}) {
     fetchData();
   }, [fetchUrl]);
 
+  // *** Old ***
   // if(isLoading){
 
   //   return (
@@ -96,7 +97,7 @@ function Row({title, fetchUrl, isLargeRow = false}) {
               key={movie.id} 
               src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
               alt={movie.name} 
-              loading="lazy"
+              //loading="lazy"
             />
 
           )
